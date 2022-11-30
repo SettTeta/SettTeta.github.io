@@ -56,7 +56,10 @@
                         <img src="headless knight chasing it's victim.jpg" alt="profile pic"
                             style="width: 100px; border-radius: 50%;">
                         <br />
-                        <h1 style="font-family: Sofia; margin-bottom: 0pt;">Setthanant</h1>
+                        <h1 style="font-family: Sofia; margin-bottom: 0pt;">
+                            <span id="myName">
+                                Setthanant
+                            </span></h1>
                         <h2 style="font-family: trirong; margin-top: 0pt;">Student</h2>
                     </div>
                 </td>
@@ -86,6 +89,23 @@
             </tr>
         </tbody>
     </table>
+
+    <button onclick="changeName()">Change Name</button>
+
+    <script>
+        console.log("Hello")
+        var x = 10
+        var y = 20
+        var z = y + x
+        console.log(z)
+
+        function changeName(){
+            console.log("Change name button was clicked")
+            var span = document.getElementById("myName")
+            span.innerHTML = "ABCDEFGHIJK"
+        }
+
+    </script>
 
 </body>
 
