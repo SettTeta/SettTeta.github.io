@@ -13,10 +13,9 @@
     background-color: rgba(189, 189, 189, 0.513);
 }
 
-.product_table tbody tr td{
+.product_table tbody td{
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-    text-align: center;
 }
 
 .center {
@@ -30,12 +29,4 @@
 
 .text_right {
     text-align: right;
-}
-
-.text_left {
-    text-align: left;
-}
-
-.icon {
-    width: 1em;
 }
