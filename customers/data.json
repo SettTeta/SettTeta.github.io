@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Lionel Messi",
+        "rating": "10",
+        "country": "Argentina"
+    },
+    {
+        "name": "Kylian Mbappe",
+        "rating": "9",
+        "country": "France"
+    },
+    {
+        "name": "Harry Kane",
+        "rating": "6",
+        "country": "England"
+    },
+    {
+        "name": "Luka Modric",
+        "rating": "8",
+        "country": "Croatia"
+    }
+    
+]

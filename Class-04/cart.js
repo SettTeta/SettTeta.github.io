@@ -74,46 +74,46 @@ function loadData() {
 
 }
 
+// Before jquery update
+// function loadDataOld() {    
+//     //let productList = document.getElementById("productList");
+//     let productList = $('productList')
+//     let gross = 0
 
-function loadDataOld() {    
-    //let productList = document.getElementById("productList");
-    let productList = $('productList')
-    let gross = 0
+//     for (let p in products) {
+//         let row = document.createElement("tr");
+//         let productName = document.createElement("td");
+//         let quantity = document.createElement("td");
+//         let ppu = document.createElement("td");
+//         let total = document.createElement("td");
 
-    for (let p in products) {
-        let row = document.createElement("tr");
-        let productName = document.createElement("td");
-        let quantity = document.createElement("td");
-        let ppu = document.createElement("td");
-        let total = document.createElement("td");
+//         productName.innerHTML = products[p].name;
+//         quantity.innerHTML = products[p].quantity;
+//         ppu.innerHTML = products[p].ppu;
+//         total.innerHTML = products[p].quantity * products[p].ppu;
 
-        productName.innerHTML = products[p].name;
-        quantity.innerHTML = products[p].quantity;
-        ppu.innerHTML = products[p].ppu;
-        total.innerHTML = products[p].quantity * products[p].ppu;
+//         productName.classList.add("text_center");
+//         quantity.classList.add("text_center");
+//         ppu.classList.add("text_center");
+//         total.classList.add("text_right");
 
-        productName.classList.add("text_center");
-        quantity.classList.add("text_center");
-        ppu.classList.add("text_center");
-        total.classList.add("text_right");
+//         gross += products[p].ppu * products[p].quantity
 
-        gross += products[p].ppu * products[p].quantity
+//         row.appendChild(productName);
+//         row.appendChild(quantity);
+//         row.appendChild(ppu);
+//         row.appendChild(total);
 
-        row.appendChild(productName);
-        row.appendChild(quantity);
-        row.appendChild(ppu);
-        row.appendChild(total);
+//         productList.appendChild(row);
+//     }
 
-        productList.appendChild(row);
-    }
+//     let grossElem = document.getElementById("gross")
+//     grossElem.innerHTML = gross
 
-    let grossElem = document.getElementById("gross")
-    grossElem.innerHTML = gross
+//     let vat = gross * 0.07
+//     let net = gross - vat
 
-    let vat = gross * 0.07
-    let net = gross - vat
+//     document.getElementById("vat").innerHTML = vat.toFixed(2)
+//     document.getElementById("net").innerHTML = net.toFixed(2)
 
-    document.getElementById("vat").innerHTML = vat.toFixed(2)
-    document.getElementById("net").innerHTML = net.toFixed(2)
-
-}
+// }
