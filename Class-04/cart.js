@@ -53,6 +53,7 @@ function deleteProduct(index) {
 function loadData() {
     let allRows = ""
     let gross = 0
+    
     for (let p in products) {
         let cellName = `<td class="text_left"><img class='icon' src='icon-delete.png' onclick='deleteProduct("${p}")'>` + products[p].name + "</td>"
         let cellQuantity = '<td class="text_right">' + products[p].quantity + "</td>"
