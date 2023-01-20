@@ -69,11 +69,24 @@ function deleteProduct(index) {
 }
 
 function addToProduct() {
+    
     let productObj = {
         name: $('#item').val(),
         quantity: $('#quantity').val(),
         ppu: $('#ppu').val(),
         discount: $('#discount').val()
+    }
+
+    for(p in products) {
+        if(products[p].name == $('#item').val() && products[p].ppu == $('#ppu').val()){
+            productObj = {
+                name: $('#item').val(),
+                quantity: parseInt($('#quantity').val()) + parseInt(products[p].quantity),
+                ppu: $('#ppu').val(),
+                discount: parseInt($('#discount').val()) + parseInt(products[p].discount)
+            }
+            deleteProduct(p)
+        }
     }
 
     $('#productBody').html("")
@@ -86,5 +99,6 @@ function clearData() {
     products = []
     loadData()
 }
+
 
 ;
