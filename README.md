@@ -9,7 +9,7 @@ in order to calculate the semester GPA and their overall GPA.
 
 # Limitation:
 I was unable to resolve the issue with calculating the GPA as it keeps returning NaN. The two curriculum is near identical but I've change the first subject
-to differentiate them from each other. 
+to differentiate them from each other. Also, I wasn't able to implement the local storage.
 
 # Features:
 There are buttons on the subjects tables that allow the subject to be moved to the semester table and there is a remove button to clear it from the semester
